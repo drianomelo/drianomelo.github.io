@@ -12,14 +12,43 @@
       rel="stylesheet"
     />
 
-    
+    <link rel="stylesheet" href="src/css/app.css">
   </head>
-  <body class="font-main">
-      <div class="w-screen h-screen">
-        <header class="w-full p-6">
-          <img src="src/images/logo.svg" alt="Logo Driano.css">
-          <button></button>
+  <body>
+      <div class="container">
+        <header class="header">
+          <img class="header__img" src="src/images/logo-d.svg" alt="Logo Driano.css">
+          <button class="header__btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item"><a href="#" class="header__link">Home</a></li>
+              <li class="header__item"><a href="#" class="header__link">Projects</a></li>
+              <li class="header__item"><a href="#" class="header__link">About</a></li>
+              <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+            </ul>
+          </nav>
         </header>
+        <section class="home">
+            <h2 class="home__title">Optimize& Create</h2>
+            <a class="home__btn" href="#" >
+              Scroll Down 
+              <i class="fa-solid fa-angles-down"></i>
+            </a>
+            <div class="home__info">
+              <div class="home__mail">
+                <h3>Contate-me</h3>
+                <a href="#">driano@css</a>
+              </div>
+              <p class="home__desc">
+                Oi, meu nome é Adriano Melo, sou um desenvolvedor front-end apaixonado por criar websites atraentes e funcionais, focando na experiência do usuário e no desempenho.
+              </p>
+            </div>
+          </section>
       </div>
+
+      <script src="https://kit.fontawesome.com/555bf53180.js" crossorigin="anonymous"></script>
+      <script src="src/js/app.js"></script>
   </body>
 </html>
