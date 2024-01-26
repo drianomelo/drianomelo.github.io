@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.animate-float-3s {
+    animation: float 3s infinite alternate ease-in-out;
+}
+
+.animate-float-2s {
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
