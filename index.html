@@ -15,14 +15,12 @@
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body class="w-full h-screen bg-blue-900">
-    <section>
-      <header class="mx-auto max-w-[1280px] py-6 flex items-center">
-        <h1 class="text-6xl font-medium text-60">D.CSS</h1>
-      </header>
+    <!-- HOME -->
+    <section class="mx-[150px] mt-24 mb-48 relative">
       <div
-        class="mx-auto max-w-[1280px] bg-60 py-14 px-10 flex items-center gap-4"
+        class="flex items-center gap-4 px-10 pt-16 pb-40 bg-60 rounded-[7rem]"
       >
-        <div>
+        <div class="flex flex-col items-center gap-4 -mb-72">
           <div
             class="animate-float-3s w-[240px] h-[160px] bg-60 border-2 rounded-xl overflow-hidden border-blue-900"
           >
@@ -32,33 +30,53 @@
               <div class="w-2.5 h-2.5 bg-yellow-400 rounded-full"></div>
               <div class="w-2.5 h-2.5 bg-green-400 rounded-full"></div>
             </div>
+
+            <div class="flex items-center justify-center h-[136px]">
+              <img class="h-4/5" src="src/images/saturno.svg" alt="Saturno" />
+            </div>
           </div>
+
+          <img class="w-48" src="src/images/col.svg" alt="Coluna" />
         </div>
-        <div class="flex flex-col items-center gap-4">
+
+        <div class="flex flex-col items-center gap-4 w-fit">
           <span class="text-sm italic text-blue-900"
             >Eu sou Adriano Melo, Desenvolvedor Front-End</span
           >
           <h2
-            class="font-medium text-center text-blue-900 text-[90px] leading-[1]"
+            class="font-medium text-center text-blue-900 text-9xl leading-[1]"
           >
-            Construa o site dos sonhos
+            Construa o site <span class="block">dos sonhos</span>
           </h2>
-          <p class="text-center text-blue-900">
+          <p class="w-[90%] text-lg text-center text-blue-900">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem
             unde praesentium quo eligendi. Nostrum, recusandae voluptate
             voluptas ex aliquid cumque distinctio natus laboriosam accusantium
             soluta repudiandae corporis doloribus consectetur!
           </p>
+
           <div class="flex items-center gap-5 mt-4">
-            <a class="px-6 py-3 bg-blue-900 rounded text-60" href="#"
-              >Meu Currículo</a
+            <a
+              href="#"
+              class="relative flex items-center justify-center px-6 py-3 overflow-hidden bg-blue-900 rounded group text-60 after:content-[''] after:w-24 after:h-24 after:rounded-full after:bg-blue-500 after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 after:scale-0 after:transition-all after:duration-300 after:z-20 hover:after:scale-[2]"
             >
-            <a class="px-6 py-3 bg-blue-900 rounded text-60" href="#"
-              >Meu Portifólio</a
-            >
+              <span class="opacity-0">Meu Currículo</span>
+              <span class="absolute z-50 transition-all duration-300 top-2/4 -translate-y-2/4 group-hover:-top-2/4">Meu Currículo</span>
+              <span class="absolute z-50 transition-all duration-300 top-16 -translate-y-2/4 group-hover:top-2/4">Meu Currículo</span>
+            </a>
+            
+            <a
+            href="#"
+            class="relative flex items-center justify-center px-6 py-3 overflow-hidden bg-blue-900 rounded group text-60 after:content-[''] after:w-24 after:h-24 after:rounded-full after:bg-blue-500 after:absolute after:top-2/4 after:-translate-y-2/4 after:left-2/4 after:-translate-x-2/4 after:scale-0 after:transition-all after:duration-300 after:z-20 hover:after:scale-[2]"
+          >
+            <span class="opacity-0">Meu Portifólio</span>
+            <span class="absolute z-50 transition-all duration-300 top-2/4 -translate-y-2/4 group-hover:-top-2/4">Meu Portifólio</span>
+            <span class="absolute z-50 transition-all duration-300 top-16 -translate-y-2/4 group-hover:top-2/4">Meu Portifólio</span>
+          </a>
           </div>
         </div>
-        <div>
+
+        <div class="flex flex-col items-center gap-4 -mb-64">
           <div
             class="animate-float-2s w-[240px] h-[160px] bg-60 border-2 rounded-xl overflow-hidden border-blue-900"
           >
@@ -68,10 +86,30 @@
               <div class="w-2.5 h-2.5 bg-yellow-400 rounded-full"></div>
               <div class="w-2.5 h-2.5 bg-green-400 rounded-full"></div>
             </div>
+
+            <div class="flex items-center justify-center h-[136px]">
+              <img
+                class="h-4/5"
+                src="src/images/buraco.svg"
+                alt="Buraco Negfa-rotate-180"
+              />
+            </div>
           </div>
+
+          <img class="w-48" src="src/images/col.svg" alt="Coluna" />
         </div>
       </div>
+
+      <!--  -->
+
+      <div
+        class="absolute top-0 w-full h-full home bg-60 -z-10 rounded-[7rem]"
+      ></div>
     </section>
+
+    <!-- PORTIFOLIO -->
+    <section class="w-full h-screen bg-60"></section>
+
     <script src="src/js/app.js"></script>
   </body>
 </html>
