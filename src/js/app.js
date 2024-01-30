@@ -3,19 +3,19 @@ const home = document.querySelector(".home");
 const widthHome = home.offsetWidth;
 const heighthHome = home.offsetHeight;
 const qtdCircleTopBottom = Math.ceil(widthHome / 96);
-const qtdCircleLeftRight = Math.floor(heighthHome / 96);
+const qtdCircleLeftRight = Math.ceil(heighthHome / 96);
 
 for (let i = 0; i < qtdCircleTopBottom; i++) {
-  const circleTop = createCircleTop(`${i * 90}`);
-  const circleBottom = createCircleBottom(`${i * 90}`);
+  const circleTop = createCircleTop(`${i * 90.5}`);
+  const circleBottom = createCircleBottom(`${i * 90.5}`);
 
   home.append(circleTop);
   home.append(circleBottom);
 }
 
 for (let i = 0; i < qtdCircleLeftRight; i++) {
-  const circleLeft = createCircleLeft(`${i * 90}`);
-  const circleRight = createCircleRight(`${i * 90}`);
+  const circleLeft = createCircleLeft(`${i * 83}`);
+  const circleRight = createCircleRight(`${i * 83}`);
 
   home.append(circleLeft);
   home.append(circleRight);
@@ -72,3 +72,4 @@ function createCircleRight(top) {
 
   return circle;
 }
+
