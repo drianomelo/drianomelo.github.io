@@ -22,6 +22,14 @@ body {
   animation: float 5s infinite alternate ease-in-out;
 }
 
+.animate-slide {
+  animation: slide 35s infinite linear;
+}
+
+.animate-slide-reverse {
+  animation: slide 35s infinite reverse linear;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -49,5 +57,15 @@ body {
 
   100% {
     transform: scale(6);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
